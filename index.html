@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Search App</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="body">
+    <div class="nav">
+      <h3 class="">Image Search App</h3>
+      <div class="mode_box">
+         <i  id="mode_btn" class="material-icons">dark_mode</i>
+      </div>
+    </div>
+    
+    <div class="search_box">
+      <input id="input_box" type="text" placeholder="search image">
+      <i id="search_btn" class="material-icons">search</i>
+    </div>
+    
+    <div class="img_container">
+      
+    </div>
+    
+    <div class="page_box hide" >
+      <div class="total_page">
+        <p>total pages<span id="t_pages">1</span></p>
+      </div>
+      <div class="page_button">
+        <button id="prev_btn">prev</button>
+        <p id="current_page"></p>
+        <button id="next_btn">next</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
