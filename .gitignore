@@ -1,0 +1,11 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+config.js
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

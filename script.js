@@ -16,7 +16,10 @@ let currentQuery = "";
 const searchImg = async (query) => {
     try {
         currentQuery = query;
-    const accessKey = `OYAUOqO8lLjwJSNwV_5Dey2Mca2Pvrl7Fmn-JyZKX4o`;
+    const accessKey = window.UNSPLASH_ACCESS_KEY;
+    if (!accessKey) {
+        throw new Error("Missing Unsplash access key");
+    }
     const url = `https://api.unsplash.com/search/photos?query=${query}&page=${page}&per_page=30&client_id=${accessKey}`;
     
     let response = await fetch(url);
@@ -220,6 +223,5 @@ modeBtn.addEventListener("click", () => {
         break
     }
 });
-
 
 
